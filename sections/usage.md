@@ -31,7 +31,7 @@ At this point, you have successfully deployed an exchange to the blockchain.
 
 ## Transfer funds to exchange
 
-TODO example webpage
+You can use [this](http://ethchange.github.io/) static webpage to transer some funds from your eth address to the exchange. It expects unlocked geth node to be at port 8545.
 
 ## Get transactions list
 
