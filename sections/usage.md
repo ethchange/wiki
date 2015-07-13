@@ -12,6 +12,13 @@ npm install
 node app.js
 ```
 
+When using it in production environment I recommend using [pm2](https://github.com/Unitech/pm2) as a process manager.
+
+```bash
+cd smart-exchange
+pm2 start app.js
+```
+
 ## Create and register your exchange
 
 After that you need to create your echange contract on the blockchain and register it in the namereg. It can be done with `exchange_create` method.
