@@ -1,10 +1,13 @@
 # Summary
 
+* [ICAP](sections/icap.md)
 * [Requirements](sections/requirements.md)
 * [Environment](sections/environment.md)
     * [Test](sections/environment_test.md)
     * [Production](sections/environment_pro.md)
 * [Configuration](sections/configuration.md)
+    * [owner](sections/configuration_owner.md)
+    * [namereg](sections/configuration_namereg.md)
 * [API](sections/api.md)
     * [create](sections/api_create.md)
     * [transfer](sections/api_transfer.md)
