@@ -57,3 +57,20 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","p
   ]
 }
 ```
+
+### Errors:
+
+| Name | Code |
+| - | - |
+| UNKNOWN_ERROR                     | **`100`** |
+| IDENTIFIER_IS_INCORRECT           | **`101`** |
+| IDENTIFIER_NO_ADDRESS             | **`105`** |
+
+### See also:
+
+[errors](api_errors.md)
+
+### TODO:
+
+- `fromBlock`, `toBlock` should be block hashes instead of block numbers
+- validation of `fromBlock` && `toBlock`

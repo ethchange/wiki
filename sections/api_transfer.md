@@ -48,3 +48,19 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transfer","param
   "result": "0x462602d51f5c4db38bd419529fd7a206735cf497a433eb81134fcecc910757e2"
 }
 ```
+
+### Errors:
+
+| Name | Code |
+| - | - |
+| UNKNOWN_ERROR                     | **`100`** |
+| IDENTIFIER_IS_INCORRECT           | **`101`** |
+| IDENTIFIER_NOT_OWNED              | **`103`** |
+| IDENTIFIER_NO_ADDRESS             | **`105`** |
+| FROM_IS_INCORRECT                 | **`110`** |
+| TO_IS_INCORRECT                   | **`111`** |
+| TO_IDENTIFIER_NO_ADDRESS          | **`112`** |
+
+### See also:
+
+[errors](api_errors.md)

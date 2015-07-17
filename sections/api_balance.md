@@ -38,3 +38,15 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params
   "result": "0"
 }"
 ```
+
+### Errors:
+
+| Name | Code |
+| - | - |
+| UNKNOWN_ERROR                     | **`100`** |
+| IDENTIFIER_IS_INCORRECT           | **`101`** |
+| IDENTIFIER_NO_ADDRESS             | **`105`** |
+
+### See also:
+
+[errors](api_errors.md)
