@@ -2,12 +2,12 @@
 
 Should be called to get list of exchange's transactions.
 
-## request params:
+### request params:
 
 - **identifier**: unique 4 uppercase alphanumeric characters that are an exchange identifier
 - **options**: may contain additional fields (fromBlock, toBlock), that should be used to filter exchange transactions
 
-## request example:
+### request example:
 
 ```json
 {
@@ -23,17 +23,17 @@ Should be called to get list of exchange's transactions.
 }
 ```
 
-## using curl:
+### using curl:
 
 ```bash
 curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","params":["XROF", {"fromBlock": 100}]}' -H "Content-Type: application/json" http://localhost:8080
 ```
 
-## response:
+### response:
 
 - **result** array of transaction logs
 
-## response example:
+### response example:
 
 ```json
 {

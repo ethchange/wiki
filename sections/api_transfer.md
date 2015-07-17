@@ -2,7 +2,7 @@
 
 Should be called to transfer funds from exchange's client to other address / institution. Might be also used for internal transfers.
 
-## request params:
+### request params:
 
 - **identifier**: unique 4 uppercase alphanumeric characters that are an exchange identifier
 - **from**: unique user identifier, 9 alphanumeric characters.
@@ -13,7 +13,7 @@ Should be called to transfer funds from exchange's client to other address / ins
     - **unique userid**, 9 alphanumeric characters
 - **value**: value that should be sent
 
-## request example:
+### request example:
 
 ```json
 {
@@ -29,17 +29,17 @@ Should be called to transfer funds from exchange's client to other address / ins
 }
 ```
 
-## using curl:
+### using curl:
 
 ```bash
 curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transfer","params":["XROF", "GAVOFYORK", "0xdc167599eeef974dcbdc6c49da98c42ac9e1c64b", 6]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
-## response:
+### response:
 
 - **result** - transaction hash
 
-## response example:
+### response example:
 
 ```json
 {

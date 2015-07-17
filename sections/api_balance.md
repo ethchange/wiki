@@ -2,11 +2,11 @@
 
 Should be called to check the balance of `smart exchange` with given identifier.
 
-## request params:
+### request params:
 
 - **identifier**: unique 4 uppercase alphanumeric characters that are an exchange identifier
 
-## request example:
+### request example:
 
 ```json
 {
@@ -19,17 +19,17 @@ Should be called to check the balance of `smart exchange` with given identifier.
 }
 ```
 
-## using curl:
+### using curl:
 
 ```bash
 curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params":["XROF"]}' -H "Content-Type: application/json" http://localhost:8080
 ```
 
-## response:
+### response:
 
 - **result** exchange balance
 
-## response example:
+### response example:
 
 ```json
 {
