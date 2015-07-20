@@ -26,7 +26,7 @@ Should be called to get list of exchange's transactions.
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","params":["XROF", {"fromBlock": 100}]}' -H "Content-Type: application/json" http://localhost:8080
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","params":["XROF", {"fromBlock": 50}]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:
