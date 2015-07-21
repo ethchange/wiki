@@ -6,8 +6,3 @@ Before using `smart-exchange` you need to install the following tools and you ne
 - [npm](https://www.npmjs.com/)
 - [solc](https://github.com/ethereum/cpp-ethereum) *0.1.0, available as a part of cpp-ethereum --devel*
 - [go-etheruem](https://github.com/ethereum/go-ethereum) *0.9.38*
-
-### Test environment
-
-- [embark](https://github.com/iurimatias/embark-framework)
-- [eth-deploy](https://github.com/ethchange/eth-deploy)
