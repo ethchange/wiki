@@ -13,7 +13,7 @@ Should be called to get a single transaction by transaction hash
 {
   "id": 8,
   "jsonrpc": "2.0",
-  "method": "exchange_transactions",
+  "method": "exchange_transaction",
   "params": [
     "XROF",
     "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c"
@@ -24,7 +24,7 @@ Should be called to get a single transaction by transaction hash
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","params":["XROF", "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c"]}' -H "Content-Type: application/json" http://localhost:8545
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","params":["XROF", "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c"]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:
