@@ -2,8 +2,8 @@
 
 | Name | Code | Methods |
 |-|-|-|
-| UNKNOWN_ERROR                     | **`100`** | create, transfer, transaction, transactions, balance   |
-| IDENTIFIER_IS_INCORRECT           | **`101`** | create, transfer, transaction, transactions, balance   |
+| UNKNOWN_ERROR                     | **`100`** | create, transfer, transaction, transactions, address, balance   |
+| IDENTIFIER_IS_INCORRECT           | **`101`** | create, transfer, transaction, transactions, address, balance   |
 | IDENTIFIER_IS_UNAVAILABLE         | **`102`** | create                |
 | IDENTIFIER_NOT_OWNED              | **`103`** | create, transfer      |
 | IDENTIFIER_CANNOT_OVERWRITE       | **`104`** | create                |

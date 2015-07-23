@@ -24,7 +24,7 @@ Should be called to deploy new `smart exchange` contract to ethereum network and
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_create","params":["XROF", false]}' -H "Content-Type: application/json" http://localhost:8080
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_create","params":["XROF", false]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:

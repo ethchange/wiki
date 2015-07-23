@@ -1,6 +1,6 @@
-# exchange_balance
+# exchange_address
 
-Should be called to check the balance of `smart exchange` with given identifier.
+Should be called to get exchange address.
 
 ### request params:
 
@@ -12,7 +12,7 @@ Should be called to check the balance of `smart exchange` with given identifier.
 {
   "id": 8,
   "jsonrpc": "2.0",
-  "method": "exchange_balance",
+  "method": "exchange_address",
   "params": [
     "XROF"
   ]
@@ -22,12 +22,12 @@ Should be called to check the balance of `smart exchange` with given identifier.
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params":["XROF"]}' -H "Content-Type: application/json" http://localhost:8545
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_address","params":["XROF"]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:
 
-- **result** exchange balance
+- **result** - address of the exchange
 
 ### response example:
 
@@ -35,8 +35,8 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params
 {
   "jsonrpc": "2.0",
   "id": 8,
-  "result": "0"
-}"
+  "result": "0x209f728097e6ea54068c62b5b534c115b9c5d5b5"
+}
 ```
 
 ### Errors:
@@ -45,7 +45,6 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params
 | - | - |
 | UNKNOWN_ERROR                     | **`100`** |
 | IDENTIFIER_IS_INCORRECT           | **`101`** |
-| IDENTIFIER_NO_ADDRESS             | **`105`** |
 
 ### See also:
 

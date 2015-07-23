@@ -12,6 +12,7 @@
     * [transaction](sections/api_transaction.md)
     * [transactions](sections/api_transactions.md)
     * [balance](sections/api_balance.md)
+    * [address](sections/api_address.md)
     * [errors](sections/api_errors.md)
 * [Usage](sections/usage.md)
 * [TODO](sections/todo.md)
