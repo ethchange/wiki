@@ -17,6 +17,8 @@ node testnet.js --deploy
 node testnet.js
 ```
 
+[![asciicast](https://asciinema.org/a/311ecgwtl32msd1cka4kvsyw6.png)](https://asciinema.org/a/311ecgwtl32msd1cka4kvsyw6)
+
 ### Note
 
 `./testnet_data` is directory used to store private blockchain

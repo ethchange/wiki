@@ -4,11 +4,10 @@ Guide how to use `smart-exchange`.
 
 ### Start service
 
-Before you start using `smart-exchange` you need to setup 2 options - `namereg` and `owner`. Look at configuration section for more details.
+Before you start using `smart-exchange` you need to setup 2 options - `namereg` and `owner`. They are configured automatically by `testnet.js`, but if you want to use `smart-exchange` in production environment, you will need to set them by yourself.
 
 ```bash
 cd smart-exchange
-npm install
 node app.js
 ```
 
@@ -32,6 +31,8 @@ You can also use `smart-exchange` directly from your node application
 var se = require('smart-exchange');
 ```
 
+[![asciicast](https://asciinema.org/a/d6ju4n0h0009xkp9z675kus82.png)](https://asciinema.org/a/d6ju4n0h0009xkp9z675kus82)
+
 ### Create and register your exchange
 
 After that you need to create your echange contract on the blockchain and register it in the namereg. It can be done with `exchange_create` method.
@@ -52,7 +53,7 @@ We do not provide an API to notify about incoming transations. Although you can 
 
 ### Get transaction by hash
 
-TODO
+Should be used to get transaction by transaction hash.
 
 ### Get exchange balance
 

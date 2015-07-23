@@ -15,5 +15,6 @@
     * [address](sections/api_address.md)
     * [errors](sections/api_errors.md)
 * [Usage](sections/usage.md)
+    * [Video example](sections/usage_video.md)
 * [TODO](sections/todo.md)
 
