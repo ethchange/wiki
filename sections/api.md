@@ -15,5 +15,6 @@
 - `exchange_transaction`
 - `exchange_transactions`
 - `exchange_balance`
+- `exchange_address`
 
 These methods are described on the next pages.
