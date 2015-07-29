@@ -72,5 +72,4 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","p
 
 ### TODO:
 
-- `fromBlock`, `toBlock` should be block hashes instead of block numbers
 - validation of `fromBlock` && `toBlock`
