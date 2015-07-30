@@ -33,6 +33,15 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transactions","p
 
 - **result** array of transaction logs
 
+  event types:
+
+| event             | args |
+|-|-|
+| AnonymousDeposit  | from (address), value (uint) |
+| Deposit           | from (address), to (bytes32), value (uint) |
+| Transfer          | from (bytes32), to (address), value (uint) |
+| IcapTransfer      | from (bytes32), to (address), indirectId (bytes32), uint (value) |
+
 ### response example:
 
 ```json
