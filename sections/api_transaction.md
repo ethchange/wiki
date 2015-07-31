@@ -4,8 +4,8 @@ Should be called to get a single transaction by transaction hash
 
 ### request params:
 
+- **identifier**: unique 4 uppercase alphanumeric characters that are an exchange identifier
 - **transactionHash**: 32 bytes length transaction hash
-- **logIndex**: number that together with transaction hash uniqly identifies log.
 
 ### request example:
 
@@ -15,8 +15,8 @@ Should be called to get a single transaction by transaction hash
   "jsonrpc": "2.0",
   "method": "exchange_transaction",
   "params": [
-    "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c",
-    0
+    "XROF",
+    "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c"
   ]
 }
 ```
@@ -24,12 +24,12 @@ Should be called to get a single transaction by transaction hash
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","params":["0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c", 0]}' -H "Content-Type: application/json" http://localhost:8545
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","params":["XROF", "0xacf64bd586a847523086882c82c4cff6d77b1a753ea28c164046e37f3606583c"]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:
 
-- **result** transaction log
+- **result** array of transaction logs
 
 ### response example
 
@@ -37,7 +37,7 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","pa
 {
   "jsonrpc": "2.0",
   "id": 8,
-  "result": {
+  "result": [{
       "address": "0x9b173b6fab888af1b5eff49bf34c7aaebf58673f",
       "blockNumber": 55,
       "logIndex": 0,
@@ -50,7 +50,7 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","pa
         "to": "0x4d4152454b4f464b4b0000000000000000000000000000000000000000000000",
         "value": "15000"
       }
-    }
+    }]
 }
 ```
 
@@ -59,6 +59,8 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","pa
 | Name | Code |
 | - | - |
 | UNKNOWN_ERROR                     | **`100`** |
+| IDENTIFIER_IS_INCORRECT           | **`101`** |
+| IDENTIFIER_NO_ADDRESS             | **`105`** |
 
 ### See also:
 
