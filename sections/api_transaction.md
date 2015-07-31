@@ -1,6 +1,6 @@
 # exchange_transaction
 
-Should be called to get a single transaction by transaction hash
+Should be called to get logs from single transaction.
 
 ### request params:
 
@@ -29,7 +29,7 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_transaction","pa
 
 ### response:
 
-- **result** array of transaction logs
+- **result** array of transaction logs. Each log is uniqly identified by transactionHash and logIndex (together!).
 
 ### response example
 
