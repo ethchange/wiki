@@ -1,5 +1,7 @@
 # After "Thawing" phase end
 
+*this page is a draft*
+
 There are few additional steps that are required to make IBAN transactions available.
 
 1. We ("Ethereum Foundation") will create Exchange Namereg Contract. We won't own it in any way and we will not be able to alter it's state on different basis than anyone else. This Namereg Contract is called Fixed Fee Registrar and is available [here](https://github.com/ethereum/dapp-bin/blob/master/registrar/FixedFeeRegistrar.sol).
