@@ -16,5 +16,6 @@
     * [errors](sections/api_errors.md)
 * [Usage](sections/usage.md)
     * [Video example](sections/usage_video.md)
+* [After "Thawning" phase end](sections/thawing.md)
 * [TODO](sections/todo.md)
 
