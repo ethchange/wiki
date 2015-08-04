@@ -13,6 +13,7 @@
     * [transactions](sections/api_transactions.md)
     * [balance](sections/api_balance.md)
     * [address](sections/api_address.md)
+    * [disown](sections/api_disown.md)
     * [errors](sections/api_errors.md)
 * [Usage](sections/usage.md)
     * [Video example](sections/usage_video.md)

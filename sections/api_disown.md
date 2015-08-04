@@ -1,6 +1,6 @@
-# exchange_balance
+# exchange_disown
 
-Should be called to check the balance of `smart exchange` with given identifier.
+Should be called to disown (unregister) exchange with given identifier.
 
 ### request params:
 
@@ -12,7 +12,7 @@ Should be called to check the balance of `smart exchange` with given identifier.
 {
   "id": 8,
   "jsonrpc": "2.0",
-  "method": "exchange_balance",
+  "method": "exchange_disown",
   "params": [
     "XROF"
   ]
@@ -22,12 +22,12 @@ Should be called to check the balance of `smart exchange` with given identifier.
 ### using curl:
 
 ```bash
-curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params":["XROF"]}' -H "Content-Type: application/json" http://localhost:8545
+curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_disown","params":["XROF"]}' -H "Content-Type: application/json" http://localhost:8545
 ```
 
 ### response:
 
-- **result** exchange balance
+- **result** true if exchange is unregistered
 
 ### response example:
 
@@ -35,7 +35,7 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params
 {
   "jsonrpc": "2.0",
   "id": 8,
-  "result": "0"
+  "result": true
 }
 ```
 
@@ -45,7 +45,7 @@ curl -X POST --data '{"id":8,"jsonrpc":"2.0","method":"exchange_balance","params
 | - | - |
 | UNKNOWN_ERROR                     | **`100`** |
 | IDENTIFIER_IS_INCORRECT           | **`101`** |
-| IDENTIFIER_NO_ADDRESS             | **`105`** |
+| IDENTIFIER_NOT_OWNED              | **`103`** |
 
 ### See also:
 
