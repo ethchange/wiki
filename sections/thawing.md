@@ -12,10 +12,10 @@ There are few additional steps that are required to make IBAN transactions avail
 4. We (Ethdev) will add new method to javascript library && geth console called `sendIBANTransaction`. This method will be used by users to transfer funds to exchange.
     - example:
     ```js
-    eth.sendIBANTransaction({
-        "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
-        "to": "XE81ETHXREGGAVOFYORK",
-        "value": "0x10"
-    }
+    eth.sendIBANTransaction(
+        "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+        "XE81ETHXREGGAVOFYORK",
+        "0x10"
+    )
     ```
 
