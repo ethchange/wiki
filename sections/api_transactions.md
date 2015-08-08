@@ -17,7 +17,7 @@ Should be called to get list of exchange's transactions.
   "params": [
     "XROF",
     {
-      "fromBlock": 100
+      "fromBlock": 50
     }
   ]
 }
